@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Past tenses in English</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleQuestoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-removebg-preview.png">
+</head>
+<body>
+    <script src="./js/geral.js"></script>
+    <div class="trocaCorreta show"><p>Solicitação de pontuação enviada para o professor</p></div>
+    <div class="trocaErrada show"><p>A solicitação está errada, tente novamente</p></div>
+    <div class="points">
+        <p class="quantPoints">+10</p>
+        <div class="coints" onclick="mostraPontos()"><div class="CircleInter" id="CircleInter"><img src="./images/moeda.png" ></div></div>
+    </div>
+    <div class="header">
+        <div class="leftdiv">
+            <div class="logo"><img src="./images/ifceLogo2.png" alt="logo"></div>
+            <div class="menu">
+                <nav class="menu-text">
+                    <a href="EnglishProject.html">Home</a>
+                    <a href="videoAula.html">Video</a>
+                    <a href="Questoes.html" class="ativo">Questions</a>
+                    <a href="sobreNos.html">About Us</a>
+                </nav>
+            </div>
+        </div>
+        <div class="rightdiv">
+            <div class="perfil" onclick="menuPerfil()">
+                <img src="./images/do-utilizador.png">
+            </div>
+            <div class="menu-resp" onclick="toggleMenuResp()">
+                <img src="images/menu-aberto.png">
+            </div>
+        </div>
+    </div>
+    <div class="menu-resp-opened">
+        <div class="menu-resp-perfil">
+            <img src="./images/do-utilizador.png">
+            <h4 class="nomePerfil">Convidado</h4>
+            <p id="Redeemcoints">Redeem coints <img src="./images/sinal-de-seta-para-baixo-para-navegar.png" class="imagemAntes"></p>
+        </div>
+        <a href="EnglishProject.html" class="ativo">Home</a>
+        <a href="Questoes.html" class="ativo">Questions</a>
+        <a href="sobreNos.html">About Us</a>
+    </div>
+    <div class="menuPerfil show">
+        <nav class="selecoesMenu">
+            <a href="">Sign up</a>
+            <a href="">Login</a>
+            <a onclick="MostraTrocarMoedas()">Redeem coints <img src="./images/sinal-de-seta-para-baixo-para-navegar.png" class="imagemAntes"></a>
+        </nav>
+        <div class="trocarMoedas show">
+            <p class="quantMoedas"></p>
+            <p>Coints</p>
+            <input type="text" id="inputMoedas" oninput="CalcularValor()">
+            <p>Points</p>
+            <p id="inputPontos"></p>
+            <input type="button" value="Confirm" id="moedaButton" onclick="FazerTroca()">
+        </div>
+    </div>
+    </div>
+    <div class="question-container comando">Texto base das questões: <a href="">Link para o texto da equipe do Gabriel</a></div>
+    <div class="question-container">
+        <h3 class="comando">1) Which of these past tense verbs can we find in the text</h3>
+        
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">a</div>
+            </div>
+            <input type="radio" name="answer1" value="2">
+            <div class="opcao" id="q1b">open, clean field<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">b</div>
+            </div>
+            <input type="radio" name="answer1" value="3">
+            <div class="opcao" id="q1c">related, danced, finished <img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">c</div>
+            </div>
+            <input type="radio" name="answer1" value="1">
+            <div class="opcao" id="q1a">called, enabled, walked <img id ="respostas" src="images/correto.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">d</div>
+            </div>
+            <input type="radio" name="answer1" value="4">
+            <div class="opcao" id="q1d">Field, related, fueled<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <div class="notaQ comando"></div>
+    </div>
+    <div class="question-container">
+        <h3 class="comando">2) complete the sentence below with the past tense verb </h3>
+        <p class="frase">a) "This small semiconductor component <input type='text' id = "resposta1" class="entrada"> the door." (open)</p>
+        <p class="frase">b) "This <input type="text" id = "resposta2" class="entrada"> innovation and the technology" (fuel)</p>
+        <p class="frase">c) These advances <input type="text" id = "resposta3" class="entrada"> the beginning of an execiting era in computing (mark)</p>
+        <div class="notaQ comando"></div>
+    </div>
+
+    <div class="question-container">
+        <h3 class="comando">3)  In the context "During what time is it emphasized in the text that challenges related to cybersecurity and ethics arise?" what tense is the word "emphasized" in?</h3>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">a</div>
+            </div>
+            <input type="radio" name="answer2" value="2">
+            <div class="opcao" id="q3b">Past Perfect<img id ="respostas" src="images/correto.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">b</div>
+            </div>
+            <input type="radio" name="answer2" value="1">
+            <div class="opcao" id="q3a">Simple Past<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">c</div>
+            </div>
+            <input type="radio" name="answer2" value="3">
+            <div class="opcao" id="q3c">Past Continuous<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">d</div>
+            </div>
+            <input type="radio" name="answer2" value="4">
+            <div class="opcao" id="q3d">Past Perfect Continuous<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <div class="notaQ comando"></div>
+    </div>
+    <div class="question-container">
+        <h3 class="comando">4) In the sentence "Charles Babbage's Analytical Engine, conceived in the 19th century, was a fundamental piece in the development of computer theory," what tense is the word "conceived" in? </h3>
+        
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">a</div>
+            </div>
+            <input type="radio" name="answer3" value="2">
+            <div class="opcao" id="q4b">Present Perfect<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">b</div>
+            </div>
+            <input type="radio" name="answer3" value="1">
+            <div class="opcao" id="q4a">Simple Past<img id ="respostas" src="images/correto.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">c</div>
+            </div>
+            <input type="radio" name="answer3" value="4">
+            <div class="opcao" id="q4d">Past Perfect Continuous<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">d</div>
+            </div>
+            <input type="radio" name="answer3" value="3">
+            <div class="opcao" id="q4c">Past Continuous<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        
+        <div class="notaQ comando"></div>
+    </div>
+    <div class="question-container">
+        <h3 class="comando">5)  In the phrase "During what time period has computing become increasingly present in areas such as health and finance?" what tense is the phrase "has become" in?</h3>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">a</div>
+            </div>
+            <input type="radio" name="answer4" value="1">
+            <div class="opcao" id="q5a">Simple Past<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">c</div>
+            </div>
+            <input type="radio" name="answer4" value="3">
+            <div class="opcao" id="q5c">Past Continuous<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">d</div>
+            </div>
+            <input type="radio" name="answer4" value="4">
+            <div class="opcao" id="q5d">Past Perfect Continuous<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">b</div>
+            </div>
+            <input type="radio" name="answer4" value="2">
+            <div class="opcao" id="q5b">Present Perfect <img id ="respostas" src="images/correto.png"></div>
+        </label>
+        <div class="notaQ comando"></div>
+    </div>
+    <div class="question-container">
+        <h3 class="comando">6) complete the sentence below with the past tense verb </h3>
+        <p class="frase">a) "The abacus <input type="text" id = "resposta4" class="entrada"> the first known tool used to facilitate mathematical calculations. Its origin dates back to ancient civilizations such as Babylon and China, around 2400 BC" (being)</p>
+        <p class="frase">b) "Moreover, computing <input type="text" id = "resposta5" class="entrada"> increasingly present in areas such as health, finance, education, and entertainment" (becoming)</p>
+        <p class="frase">c) The networking of these computers, known as the internet, <input type="text" id = "resposta6" class="entrada"> another game-changer (having been)</p>
+        <div class="notaQ comando"></div>
+    </div>
+    <div class="question-container">
+        <h3 class="comando">7) complete the sentence below with the past tense verb </h3>
+        <p class="frase">a) "I <input type="text" id = "resposta7" class="entrada"> the house three times yesterday. (to clean - affirmative form)</p>
+        <p class="frase">b) "She <input type="text" id = "resposta8" class="entrada"> the windows because it was too hot in here. (to open - affirmative form)</p>
+        <p class="frase">c) He <input type="text" id = "resposta9" class="entrada"> to be a doctor when he was a kid. (to want - affirmative form)</p>
+        <div class="notaQ comando"></div>
+    </div>
+    <div class="question-container">
+        <h3 class="comando">8)(PUC – SP) Last Christmas he __  a lot.</h3>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">a</div>
+            </div>
+            <input type="radio" name="answer5" value="1">
+            <div class="opcao" id="q6a">ate<img id ="respostas" src="images/correto.png"></div>
+        </label>
+        
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">b</div>
+            </div>
+            <input type="radio" name="answer5" value="3">
+            <div class="opcao" id="q6c">eats<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">c</div>
+            </div>
+            <input type="radio" name="answer5" value="4">
+            <div class="opcao" id="q6d">is eating<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">d</div>
+            </div>
+            <input type="radio" name="answer5" value="2">
+            <div class="opcao" id="q6b">eat <img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <div class="notaQ comando"></div>
+    </div>
+    <div class="question-container">
+        <h3 class="comando">9)Fill in the blanks with the correct alternative:´x</h3>
+        <h3 class="comando">Where _ they _ ?</h3>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">a</div>
+            </div>
+            <input type="radio" name="answer6" value="1">
+            <div class="opcao" id="q7a">Go – Did<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">b</div>
+            </div>
+            <input type="radio" name="answer6" value="3">
+            <div class="opcao" id="q7c">Did – Went<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">c</div>
+            </div>
+            <input type="radio" name="answer6" value="4">
+            <div class="opcao" id="q7d">Do – Did<img id ="respostas" src="images/cruz.png"></div>
+        </label>
+        <label class="optionLabel">
+            <div class="letra">
+                <div class="blocoLetra">d</div>
+            </div>
+            <input type="radio" name="answer6" value="2">
+            <div class="opcao" id="q7b">Did – Go <img id ="respostas" src="images/correto.png"></div>
+        </label>
+        <div class="notaQ comando"></div>
+    </div>
+    <div class="responder">
+        <div class="subtitle" ><h2 id="pontuacao"><span id="valorPontuacao">0</span> /10.0</h2></div>
+        <button class="submit" onclick="ResponderQ()">Responder</button>
+    </div>
+    <footer class="rodapé">
+        <div class="divisoes"><img id="logo" src="./images/logo-removebg-preview.png"></div>
+        <div class="divisoes">
+            <h4 class="instituto">Instituto Federal de Ciencia e Tecnologia do Ceara(Campus Iguatu)</h4>
+            <div class="redesP">
+                <a class="inst" href="https://www.instagram.com/ifceiguatu/"><img src="./images/instagram.png"></a>
+                <a class="face" href="https://www.facebook.com/ifceiguatu/?locale=pt_BR"><img src="./images/facebook.png"></a>
+                <a id="navegador" href="https://ifce.edu.br/iguatu"><img src="./images/motor-de-busca-na-web.png"></a>
+            </div>
+            <h4 class="instituto">Bacharelado em Ciencia da Computação</h4>
+            <div class="redesP">
+                <a class="inst" href=""><img src="./images/instagram.png"></a>
+                <a class="face" href="https://ifce.edu.br/iguatu/curso/computacao"><img src="./images/motor-de-busca-na-web.png"></a>
+            </div>
+        </div>
+        <div class="divisoes" id="about">
+            <h3>About the Course</h3>
+            <p>Computer Science is a field of study dedicated to understanding and applying computational technology. Students delve into everything from software programming to underlying theoretical concepts. This course provides a comprehensive view of the digital universe, empowering graduates to develop innovative solutions and contribute to the advancement of technology.</p>
+        </div>
+    </footer>
+    <script src="js/questoes.js"></script>
+</body>
+</html>

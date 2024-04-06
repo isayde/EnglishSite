@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Past tenses in English</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-removebg-preview.png">
+    <link rel="stylesheet" href="./css/styleSobreNos.css">
+</head>
+<body>
+    <script src="./js/geral.js"></script>
+    <div class="trocaCorreta show"><p>Solicitação de pontuação enviada para o professor</p></div>
+    <div class="trocaErrada show"><p>A solicitação está errada, tente novamente</p></div>
+    <div class="points">
+        <p class="quantPoints">+10</p>
+        <div class="coints" onclick="mostraPontos()"><div class="CircleInter" id="CircleInter"><img src="./images/moeda.png" ></div></div>
+    </div>
+    <div class="header">
+        <div class="leftdiv">
+            <div class="logo"><img src="./images/ifceLogo2.png" alt="logo"></div>
+            <div class="menu">
+                <nav class="menu-text">
+                    <a href="EnglishProject.html">Home</a>
+                    <a href="videoAula.html">Video</a>
+                    <a href="Questoes.html">Questions</a>
+                    <a href="sobreNos.html" class="ativo">About Us</a>
+                </nav>
+            </div>
+        </div>
+        <div class="menuPerfil show">
+            <nav class="selecoesMenu">
+                <a href="">Sign up</a>
+                <a href="">Login</a>
+                <a onclick="MostraTrocarMoedas()">Redeem coints <img src="./images/sinal-de-seta-para-baixo-para-navegar.png" class="imagemAntes"></a>
+            </nav>
+            <div class="trocarMoedas show">
+                <p class="quantMoedas"></p>
+                <p>Coints</p>
+                <input type="text" id="inputMoedas" oninput="CalcularValor()">
+                <p>Points</p>
+                <p id="inputPontos"></p>
+                <input type="button" value="Confirm" id="moedaButton" onclick="FazerTroca()">
+            </div>
+        </div>
+        <div class="rightdiv">
+            <div class="perfil" onclick="menuPerfil()">
+                <img src="./images/do-utilizador.png">
+            </div>
+            <div class="menu-resp" onclick="toggleMenuResp()">
+                <img src="images/menu-aberto.png">
+            </div>
+        </div>
+    </div>
+    <div class="menu-resp-opened">
+        <div class="menu-resp-perfil">
+            <img src="./images/do-utilizador.png">
+            <h4 class="nomePerfil">Convidado</h4>
+            <p id="Redeemcoints">Redeem coints <img src="./images/sinal-de-seta-para-baixo-para-navegar.png" class="imagemAntes"></p>
+        </div>
+        <a href="EnglishProject.html">Home</a>
+        <a href="Questoes.html">Questions</a>
+        <a href="sobreNos.html" class="ativo">About Us</a>
+    </div>
+    <div class="data">
+        <div class="creators">
+            <div class="perfilCreators"><img id="isayde-image" src="./images/WhatsApp Image 2023-12-05 at 14.42.04.jpeg"></div>
+            <h3 class="nomes">Isayde Leandro</h3>
+            <p class="funcoes">Developer</p>
+            <p class="funcoes">Designer</p>
+            <div class="redes">
+                <a class="inst" href="https://instagram.com/isaydeleandro?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><img src="./images/instagram.png"></a>
+                <a class="git" href="https://github.com/isayde"><img src="./images/github.png"></a>
+            </div>
+        </div>
+        <div class="creators">
+            <div class="perfilCreators"><img id="italo-image"src="./images/WhatsApp Image 2023-12-04 at 14.51.13.jpeg" alt="" srcset=""></div>
+            <h3 class="nomes">Italo Mateus</h3>
+            <p class="funcoes">Content producer</p>
+            <p class="funcoes">A transletor</p>
+            <div class="redes">
+                <a class="inst" href="https://www.instagram.com/_.italomateus/"><img src="./images/instagram.png"></a>
+                <a class="git" href="https://github.com/Italo185"><img src="./images/github.png"></a>
+            </div>
+        </div>
+        <div class="creators">
+            <div class="perfilCreators">
+                <img id="gabriel-image" src="./images/WhatsApp Image 2023-12-04 at 18.04.26.jpeg">
+            </div>
+            <h3 class="nomes">Gabriel Pinheiro</h3>
+            <p class="funcoes">Content producer</p>
+            <p class="funcoes">A transletor</p>
+            <div class="redes">
+                <a class="inst" href=""><img src="./images/instagram.png"></a>
+                <a class="git" href="https://github.com/GabrielPinheiro7"><img src="./images/github.png"></a>
+            </div>
+        </div>
+    </div>
+    <footer class="rodapé">
+        <div class="divisoes"><img src="./images/logo-removebg-preview.png"></div>
+        <div class="divisoes">
+            <h4 class="instituto">Instituto Federal de Ciencia e Tecnologia do Ceara(Campus Iguatu)</h4>
+            <div class="redesP">
+                <a class="inst" href="https://www.instagram.com/ifceiguatu/"><img src="./images/instagram.png"></a>
+                <a class="face" href="https://www.facebook.com/ifceiguatu/?locale=pt_BR"><img src="./images/facebook.png"></a>
+                <a id="navegador" href="https://ifce.edu.br/iguatu"><img src="./images/motor-de-busca-na-web.png"></a>
+            </div>
+            <h4 class="instituto">Bacharelado em Ciencia da Computação</h4>
+            <div class="redesP">
+                <a class="inst" href=""><img src="./images/instagram.png"></a>
+                <a class="face" href="https://ifce.edu.br/iguatu/curso/computacao"><img src="./images/motor-de-busca-na-web.png"></a>
+            </div>
+        </div>
+        <div class="divisoes" id="about">
+            <h3>About the Course</h3>
+            <p>Computer Science is a field of study dedicated to understanding and applying computational technology. Students delve into everything from software programming to underlying theoretical concepts. This course provides a comprehensive view of the digital universe, empowering graduates to develop innovative solutions and contribute to the advancement of technology.</p>
+        </div>
+    </footer>
+</body>
+</html>

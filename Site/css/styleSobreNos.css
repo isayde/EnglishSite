@@ -1,0 +1,83 @@
+body{
+    max-width: 100%;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    margin-block: 130px;
+    align-items: center;
+    justify-content: space-around;
+}
+.creators{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 280px;
+    height: 350px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 0px black;
+    padding: 30px;
+}
+.perfilCreators{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.perfilCreators img{
+    position: relative;
+}
+#gabriel-image{
+    width: 250%;
+    right: 70px;
+}
+#italo-image{
+    width: 150%;
+    bottom: 20px;
+}
+#isayde-image{
+    width: 100%;
+    height: 130%;
+    bottom: 10px;
+}
+.nomes{
+    color: #036;
+    font-weight: bolder;
+    margin-block: 10px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    width: 80%;
+    justify-content: center;
+    padding-inline: 60px;
+    margin-top: 20px;
+}
+.redes img{
+    width: 20px;
+    margin-inline: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.redes img:hover{
+    transform: scale(1.2);
+}
+@media(max-width:1000px){
+    .creators{
+        width: 220px;
+    }
+}
+@media(max-width:750px){
+    .data{
+        flex-direction: column;
+        width: 100%;
+    }
+    .creators{
+        width: 280px;
+        margin: 50px;
+    }
+}

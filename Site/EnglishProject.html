@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <title>Past tenses in English</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <script src="./js/geral.js"></script>
+    <div class="trocaCorreta show"><p>Solicitação de pontuação enviada para o professor</p></div>
+    <div class="trocaErrada show"><p>A solicitação está errada, tente novamente</p></div>
+    <!--Botao de pontos-->
+    <div class="points">
+        <p class="quantPoints">+10</p>
+        <div class="coints" onclick="mostraPontos()"><div class="CircleInter"><img src="./images/moeda.png" ></div></div>
+    </div>
+    <!--Header principal-->
+    <div class="header">
+        <div class="leftdiv">
+            <div class="logo"><img src="./images/ifceLogo2.png" alt="logo"></div>
+            <div class="menu">
+                <nav class="menu-text">
+                    <a href="EnglishProject.html" class="ativo">Home</a>
+                    <a href="videoAula.html">Video</a>
+                    <a href="Questoes.html">Questions</a>
+                    <a href="sobreNos.html">About Us</a>
+                </nav>
+            </div>
+        </div>
+        <div class="rightdiv">
+            <div class="perfil" onclick="menuPerfil()">
+                <img src="./images/do-utilizador.png">
+            </div>
+            <div class="menu-resp" onclick="toggleMenuResp()">
+                <img src="images/menu-aberto.png">
+            </div>
+        </div>
+    </div>
+    <!--Menu do perfil-->
+    <div class="menuPerfil show">
+        <nav class="selecoesMenu">
+            <a href="">Sign up</a>
+            <a href="">Login</a>
+            <a onclick="MostraTrocarMoedas()">Redeem coints <img src="./images/sinal-de-seta-para-baixo-para-navegar.png" class="imagemAntes"></a>
+        </nav>
+        <div class="trocarMoedas show">
+            <p class="quantMoedas"></p>
+            <p>Coints</p>
+            <input type="text" id="inputMoedas" oninput="CalcularValor()">
+            <p>Points</p>
+            <p id="inputPontos"></p>
+            <input type="button" value="Confirm" id="moedaButton" onclick="FazerTroca()">
+        </div>
+    </div>
+    <!--Header celular-->
+    <div class="menu-resp-opened">
+        <div class="menu-resp-perfil">
+            <img src="./images/do-utilizador.png">
+            <h4 class="nomePerfil">Convidado</h4>
+            <p id="Redeemcoints" onclick="MostrarTroca()">Redeem coints <img src="./images/sinal-de-seta-para-baixo-para-navegar.png" class="imagemAntes"></p>
+        </div>
+        <a href="EnglishProject.html" class="ativo">Home</a>
+        <a href="Questoes.html">Questions</a>
+        <a href="sobreNos.html">About Us</a>
+    </div>
+    <!--Conteúdos-->
+    <div class="main-text">
+        <h1 class="title"><strong>Past Tenses in English</strong></h1>
+        <h2 class="subtitle">Introdução</h2>
+        <p class="text">Os tempos verbais do passado na língua inglesa são como peças-chave que ajudam a contar histórias e relatar experiências passadas. Compreender como usá-los é fundamental para se comunicar com eficácia em inglês.</p>
+        <p> </p>
+        <p class="text">Nesta página, vamos explorar os principais tempos verbais do passado, como o <a href="#simplesPast"><u class="ancora">Passado Simples</u></a>, o <a href="#pastContinuo"><u class="ancora">Passado Contínuo</u></a> o <a href="#pastPerfect"><u class="ancora">Passado Perfeito</u></a> e o <a href="#pastPerfectContinuos"><u class="ancora">Passado Perfeito Contínuo</u></a>. Vamos desvendar suas formas e aplicações, tornando mais fácil para você se expressar em situações que envolvem o passado.</p>
+    </div>
+    <div class="simplePast" id="simplesPast">
+        <h2 class="subtitle">Passado Simples (Simple Past):</h2>
+        <p class="text">O <b class="destaque">Passado Simples</b> é uma das formas verbais mais fundamentais para descrever ações que ocorreram em um momento específico no passado. Ele é frequentemente usado para narrar eventos concluídos e situações passadas. Esse verbo possui dois tipos, os regulares e os irregulares, leia os seus significados abaixo:</p>
+        <div class="square">
+            <div class="top">
+                <div class="verbosReg">
+                    <h2 class="subtitleSquare" onclick="showB2()">Verbos Regulares</h2>
+                </div>
+                <div class="verbosIrreg">
+                    <h2 class="subtitleSquare" onclick="showB1()">Verbos Irregulares</h2>
+                </div>
+            </div>
+            <div class="interSquare2">
+                <p class="text">Para a maioria dos verbos regulares, você adiciona o sufixo "-ed" ao radical do verbo para formar o passado simples. Observe a tabela:</p>
+                
+                <div class="table"><img src="./images/TableRegulares.PNG"></div>
+            </div>
+            <div class="interSquare">
+                <p class="text">Os verbos irregulares têm formas únicas no passado simples e não seguem o padrão "-ed". Observe a tabela:</p>
+                <div class="table"><img src="./images/TableIrregulares.PNG"></div>
+            </div>
+        </div>
+    </div>
+    <div class="pastContinuo" id="pastContinuo">
+        <h2 class="subtitle">Passado Contínuo (Past Continuous):</h2>
+        <p class="text">O <b class="destaque">Passado Contínuo</b> é um tempo verbal em inglês usado para descrever ações ou eventos que estavam em andamento em um ponto específico no passado. É formado pelo passado do verbo "to be" (was/were) e o gerúndio do verbo principal (forma base + "-ing"). Este tempo é usado nas seguintes situações:</p>
+        <div class="squareCasos">
+            <ol class="casos">
+                <li class="cadaCaso">Para descrever ações em andamento em um momento específico no passado: "They were playing soccer when it started raining" (Eles estavam jogando futebol quando começou a chover).</li>
+                <li class="cadaCaso">Para dar contexto ou cenário em uma narrativa passada: "The sun was setting, and birds were singing" (O sol estava se pondo, e os pássaros estavam cantando).</li>
+                <li class="cadaCaso">Para expressar ações simultâneas no passado: "While I was reading, he was watching TV" (Enquanto eu estava lendo, ele estava assistindo TV).</li>
+            </ol>
+        </div>
+    </div>
+    <div class="pastPerfect" id="pastPerfect">
+        <h2 class="subtitle">Passado Perfeito (Past Perfect):</h2>
+        <p class="text">O <b class="destaque">Passado Perfeito</b> é um tempo verbal em inglês usado para indicar que uma ação ocorreu antes de outra ação ou evento no passado. Ele é formado pelo passado do verbo "to have" (had) seguido pelo particípio passado do verbo principal. O Passado Perfeito é usado nas seguintes situações:</p>
+        <div class="squareCasos">
+            <ol class="casos">
+                <li class="cadaCaso">Para indicar que uma ação foi concluída antes de outra no passado: "I had already finished my homework when he called" (Eu já tinha terminado meu dever de casa quando ele ligou).</li>
+                <li class="cadaCaso">Em narrativas para estabelecer a sequência dos eventos: "She had never visited that city before she moved there" (Ela nunca tinha visitado essa cidade antes de se mudar para lá).</li>
+                <li class="cadaCaso">Para enfatizar ações concluídas em um ponto específico no passado: "By the time we arrived, the concert had already started" (Quando chegamos, o show já tinha começado).</li>
+            </ol>
+        </div>
+    </div>
+    <div class="pastPerfectContinuos" id="pastPerfectContinuos">
+        <h2 class="subtitle">Passado Perfeito Contínuo (Past Perfect Continuous):</h2>
+        <p class="text">O <b class="destaque">Passado Perfeito Contínuo</b> é um tempo verbal em inglês usado para descrever a duração de uma ação que ocorreu antes de outra ação ou evento no passado. Ele é formado pelo passado do verbo "to have" (had), seguido de "been," e o gerúndio do verbo principal (forma base + "-ing"). O Passado Perfeito Contínuo é empregado nas seguintes situações:</p>
+        <div class="squareCasos">
+            <ol class="casos">
+                <li class="cadaCaso">Para enfatizar a duração de uma ação que começou no passado e continuou até outro ponto no passado: "She had been studying for hours before the exam" (Ela tinha estado estudando por horas antes do exame).</li>
+                <li class="cadaCaso">Para mostrar o progresso de uma ação que antecedeu outra ação passada: "He was tired because he had been working all day" (Ele estava cansado porque tinha estado trabalhando o dia todo</li>
+                <li class="cadaCaso">Em narrativas, para criar contexto e detalhes sobre eventos passados: "When I met her, she had been living in Paris for five years" (Quando a conheci, ela estava morando em Paris havia cinco anos).</li>
+            </ol>
+        </div>
+    </div>
+    <div class="negation" id="negation">
+        <h2 class="subtitle">Negation of the Past Tense (Negação do Tempo verbal no passado)</h2>
+        <p class="text">Quando queremos expressar algo que não aconteceu no passado, utilizamos a estrutura apropriada para negações. Vamos considerar o uso do verbo "to be" (ser/estar) no passado como exemplo:</p>
+        <div class="squareCasos">
+            <ol class="casos">
+                <li class="cadaCaso">Verbo "to be" no Passado Simples (was/were):</li>
+                <p class="cadaCaso">Afirmação: She was happy. (Ela estava feliz.)</p>
+                <p class="cadaCaso">Negação: She was not happy. / She wasn't happy. (Ela não estava feliz.)</p>
+                <p class="cadaCaso">Aqui, adicionamos "not" após o verbo "to be" para formar a negação. A forma contraída, "wasn't," é comumente utilizada em contextos informais.</p>
+                <li class="cadaCaso">Outros Verbos no Passado Simples:</li>
+                <p class="cadaCaso">Afirmação: I visited London last summer. (Eu visitei Londres no último verão.)</p>
+                <p class="cadaCaso">Negação: I did not visit London last summer. / I didn't visit London last summer. (Eu não visitei Londres no último verão.)</p>
+                <p class="cadaCaso">Para verbos que não são "to be," utilizamos o auxiliar "did" seguido pelo verbo principal no infinitivo sem "to" para formar a negação. Novamente, a forma contraída "didn't" é comum na linguagem falada e escrita informal.</p>
+            </ol>
+        </div>
+    </div>
+    <script src="./js/EnglishProject.js"></script>
+
+    <footer class="rodapé">
+        <div class="divisoes"><img src="./images/logo-removebg-preview.png"></div>
+        <div class="divisoes">
+            <h4 class="instituto">Instituto Federal de Ciencia e Tecnologia do Ceara(Campus Iguatu)</h4>
+            <div class="redesP">
+                <a class="inst" href="https://www.instagram.com/ifceiguatu/"><img src="./images/instagram.png"></a>
+                <a class="face" href="https://www.facebook.com/ifceiguatu/?locale=pt_BR"><img src="./images/facebook.png"></a>
+                <a id="navegador" href="https://ifce.edu.br/iguatu"><img src="./images/motor-de-busca-na-web.png"></a>
+            </div>
+            <h4 class="instituto">Bacharelado em Ciencia da Computação</h4>
+            <div class="redesP">
+                <a class="inst" href=""><img src="./images/instagram.png"></a>
+                <a class="face" href="https://ifce.edu.br/iguatu/curso/computacao"><img src="./images/motor-de-busca-na-web.png"></a>
+            </div>
+        </div>
+        <div class="divisoes" id="about">
+            <h3>About the Course</h3>
+            <p>Computer Science is a field of study dedicated to understanding and applying computational technology. Students delve into everything from software programming to underlying theoretical concepts. This course provides a comprehensive view of the digital universe, empowering graduates to develop innovative solutions and contribute to the advancement of technology.</p>
+        </div>
+    </footer>
+</body>
+</html>

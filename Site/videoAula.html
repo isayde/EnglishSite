@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Past tenses in English</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleVideoAula.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-removebg-preview.png">
+</head>
+<body>
+    <script src="./js/geral.js"></script> 
+    <div class="trocaCorreta show"><p>Solicitação de pontuação enviada para o professor</p></div>
+    <div class="trocaErrada show"><p>A solicitação está errada, tente novamente</p></div>
+    <div class="points">
+        <p class="quantPoints">+10</p>
+        <div class="coints" onclick="mostraPontos()"><div class="CircleInter" id="CircleInter"><img src="./images/moeda.png" ></div></div>
+    </div>
+    <div class="header">
+        <div class="leftdiv">
+            <div class="logo"><img src="./images/ifceLogo2.png" alt="logo"></div>
+            <div class="menu">
+                <nav class="menu-text">
+                    <a href="EnglishProject.html">Home</a>
+                    <a href="videoAula.html" class="ativo">Video</a>
+                    <a href="Questoes.html">Questions</a>
+                    <a href="sobreNos.html">About Us</a>
+                </nav>
+            </div>
+        </div>
+        <div class="menuPerfil show">
+            <nav class="selecoesMenu">
+                <a href="">Sign up</a>
+                <a href="">Login</a>
+                <a onclick="MostraTrocarMoedas()">Redeem coints <img src="./images/sinal-de-seta-para-baixo-para-navegar.png" class="imagemAntes"></a>
+            </nav>
+            <div class="trocarMoedas show">
+                <p class="quantMoedas"></p>
+                <p>Coints</p>
+                <input type="text" id="inputMoedas" oninput="CalcularValor()">
+                <p>Points</p>
+                <p id="inputPontos"></p>
+                <input type="button" value="Confirm" id="moedaButton" onclick="FazerTroca()">
+            </div>
+        </div>
+        <div class="rightdiv">
+            <div class="perfil" onclick="menuPerfil()">
+                <img src="./images/do-utilizador.png">
+            </div>
+            <div class="menu-resp" onclick="toggleMenuResp()">
+                <img src="images/menu-aberto.png">
+            </div>
+        </div>
+    </div>
+    <div class="menu-resp-opened">
+        <div class="menu-resp-perfil">
+            <img src="./images/do-utilizador.png">
+            <h4 class="nomePerfil">Convidado</h4>
+            <p id="Redeemcoints">Redeem coints <img src="./images/sinal-de-seta-para-baixo-para-navegar.png" class="imagemAntes"></p>
+        </div>
+        <a href="EnglishProject.html">Home</a>
+        <a href="videoAula.html" class="ativo">Video</a>
+        <a href="Questoes.html">Questions</a>
+        <a href="sobreNos.html">About Us</a>
+    </div>
+    <div class="conteiner">
+        <h2 class="subtitle">Simple past:</h2>
+        <div class="slider-container">
+            <button class="slider-controls" id="anterior" onclick="prevSlide('slider-wrapper-1')"><img src="images/seta-direita.png"></button>
+            <div class="slider-wrapper" id="slider-wrapper-1">
+                <div class="slide-set">
+                    <div class="slide" onclick="mostrarOverlay('overlay-1')"><iframe  width="100%" height="100%" src="https://www.youtube.com/embed/RYAmGVI_C_4?si=xQ4ZJHHEuKz6OcmE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-1"></div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-2')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/hpUMYcic3oI?si=xaZQlkQYmkEEar0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-2"></div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-3')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/X_VxAvZZdXE?si=ZCgL1KCPC2XDf1Pm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-3"></div>
+                </div>
+                <div class="slide-set">
+                    <div class="slide" onclick="mostrarOverlay('overlay-4')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/MI3S3kdkofo?si=o4dJSalyEMeescM-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-4"></div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-5')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/dmJrYbDjxQY?si=kzu2gFelnXQ_qOfW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-5"></div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-6')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/g-uW_KheiEc?si=a3_XMSgLK9nSapOG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-6"></div>
+                </div>
+            </div>
+            <button class="slider-controls" onclick="nextSlide('slider-wrapper-1')"><img src="images/seta-direita.png"></button>
+        </div>
+    </div>
+    
+    <div class="conteiner">
+        <h2 class="subtitle">Past Continuous:</h2>
+        <div class="slider-container">
+            <button class="slider-controls" id="anterior" onclick="prevSlide('slider-wrapper-2')"><img src="images/seta-direita.png"></button>
+            <div class="slider-wrapper" id="slider-wrapper-2">
+                <div class="slide-set">
+                    <div class="slide" onclick="mostrarOverlay('overlay-7')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/T21lXynt084?si=y8PCTfBuoF9UvBsp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-7" onclick="esconderOverlay('overlay-7')">Teste</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-8')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/GG3H_ah4q5U?si=dYxZA66RF4P2LYJH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-8">Teste 2</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-9')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/uCdDJ0DgrSg?si=YDAbHEUUbNPXyH03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-9">Teste 3</div>
+                </div>
+                <div class="slide-set">
+                    <div class="slide" onclick="mostrarOverlay('overlay-10')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/bTWa5M4UMO8?si=HGyLQz_QJw9nOpsm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-10">Teste</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-11')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/6Y5bbgo8-HE?si=Idm1jgpPpjNRVMrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-11">Teste 2</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-12')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/UeKZ6Mm-SlY?si=IJzS4zV5jLTIwSyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-12">Teste 3</div>
+                </div>
+            </div>
+            <button class="slider-controls" onclick="nextSlide('slider-wrapper-2')"><img src="images/seta-direita.png"></button>
+        </div>
+    </div>
+    <div class="conteiner">
+        <h2 class="subtitle">Past Perfect:</h2>
+        <div class="slider-container">
+            <button class="slider-controls" id="anterior" onclick="prevSlide('slider-wrapper-3')"><img src="images/seta-direita.png"></button>
+            <div class="slider-wrapper" id="slider-wrapper-3">
+                <div class="slide-set">
+                    <div class="slide" onclick="mostrarOverlay('overlay-13')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/fVAY6RMbnks?si=r_d4kibD_hfWJx0e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-13">Teste</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-14')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/6mfpZz8LD14?si=-sLk-sKByZ57K8Hx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-14">Teste 2</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-15')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/T4zS5A2Pmio?si=1LUBKK9mkLh4DFlf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-15">Teste 3</div>
+                </div>
+                <div class="slide-set">
+                    <div class="slide" onclick="mostrarOverlay('overlay-16')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/wMmENYjr7Do?si=CSgltbXlhhJOjKaT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-16">Teste</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-17')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Jjj5-KnpdIQ?si=WwWxxy7rUYgAsHSf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-17">Teste 2</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-18')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ey0JqLSfCdA?si=HJzL1GwP8vDRg5ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-18">Teste 3</div>
+                </div>
+            </div>
+            <button class="slider-controls" onclick="nextSlide('slider-wrapper-3')"><img src="images/seta-direita.png"></button>
+        </div>
+    </div>
+    <div class="conteiner">
+        <h2 class="subtitle">Past Perfect Continuous:</h2>
+        <div class="slider-container">
+            <button class="slider-controls" id="anterior" onclick="prevSlide('slider-wrapper-4')"><img src="images/seta-direita.png"></button>
+            <div class="slider-wrapper" id="slider-wrapper-4">
+                <div class="slide-set">
+                    <div class="slide" onclick="mostrarOverlay('overlay-19')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/5pDVhwemVlg?si=PE1YZDfyhhfU-6bV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-19">Teste</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-20')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/4FsMQdb1xUI?si=zkQ20rFKWXPM4EMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-20">Teste 2</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-21')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/gDW8JAceuLc?si=sz9JKWQOjHpsxex5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-21">Teste 3</div>
+                </div>
+                <div class="slide-set">
+                    <div class="slide" onclick="mostrarOverlay('overlay-22')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/S70AtMUUAns?si=JFceQ4LS6grGO3OH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-22">Teste</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-23')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/2Taf6DpUsf8?si=KW_dX7LqCSmzW7bh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-23">Teste 2</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-24')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/NJ5MtHkcEJE?si=aUidoiCe0gccoXoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-24">Teste 3</div>
+                </div>
+            </div>
+            <button class="slider-controls" onclick="nextSlide('slider-wrapper-4')"><img src="images/seta-direita.png"></button>
+        </div>
+    </div>
+    <div class="conteiner">
+        <h2 class="subtitle">Learn Listening:</h2>
+        <div class="slider-container">
+            <button class="slider-controls" id="anterior" onclick="prevSlide('slider-wrapper-5')"><img src="images/seta-direita.png"></button>
+            <div class="slider-wrapper" id="slider-wrapper-5">
+                <div class="slide-set">
+                    <div class="slide" onclick="mostrarOverlay('overlay-19')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Un3EJKYxx3Y?si=onV-6GO7Zd3oMgXB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-19">Teste</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-20')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/-5U0bxCWFG8?si=ctQinVDU9L4FddvP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-20">Teste 2</div>
+                    <div class="slide" onclick="mostrarOverlay('overlay-21')"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/U00umzP4rJg?si=uFnGHndVlXiWQpQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div class="overlay" id="overlay-21">Teste 3</div>
+                </div>
+            </div>
+            <button class="slider-controls" onclick="nextSlide('slider-wrapper-5')"><img src="images/seta-direita.png"></button>
+        </div>
+    </div>
+    <footer class="rodapé">
+        <div class="divisoes"><img src="./images/logo-removebg-preview.png"></div>
+        <div class="divisoes">
+            <h4 class="instituto">Instituto Federal de Ciencia e Tecnologia do Ceara(Campus Iguatu)</h4>
+            <div class="redesP">
+                <a class="inst" href="https://www.instagram.com/ifceiguatu/"><img src="./images/instagram.png"></a>
+                <a class="face" href="https://www.facebook.com/ifceiguatu/?locale=pt_BR"><img src="./images/facebook.png"></a>
+                <a id="navegador" href="https://ifce.edu.br/iguatu"><img src="./images/motor-de-busca-na-web.png"></a>
+            </div>
+            <h4 class="instituto">Bacharelado em Ciencia da Computação</h4>
+            <div class="redesP">
+                <a class="inst" href=""><img src="./images/instagram.png"></a>
+                <a class="face" href="https://ifce.edu.br/iguatu/curso/computacao"><img src="./images/motor-de-busca-na-web.png"></a>
+            </div>
+        </div>
+        <div class="divisoes" id="about">
+            <h3>About the Course</h3>
+            <p>Computer Science is a field of study dedicated to understanding and applying computational technology. Students delve into everything from software programming to underlying theoretical concepts. This course provides a comprehensive view of the digital universe, empowering graduates to develop innovative solutions and contribute to the advancement of technology.</p>
+        </div>
+    </footer>
+    <script src="js/videoAula.js"></script>
+</body>
+</html>
